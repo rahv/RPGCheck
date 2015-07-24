@@ -31,18 +31,21 @@ private:
 	QButtonGroup* _buttons;
 	std::vector< std::vector<QLabel*> > _labels;
 
+	std::vector<unsigned> _n_rolls;
+	std::vector<double> _average;
+
 private slots:
 	void roll(int id);
-	void on_buttonLuck_pressed() const;
-	void on_buttonD2_pressed() const;
-	void on_buttonD3_pressed() const;
-	void on_buttonD4_pressed() const;
-	void on_buttonD6_pressed() const;
-	void on_buttonD8_pressed() const;
-	void on_buttonD10_pressed() const;
-	void on_buttonD12_pressed() const;
-	void on_buttonD20_pressed() const;
-	void on_buttonD100_pressed() const;
+	void on_buttonLuck_pressed();
+	void on_buttonD2_pressed();
+	void on_buttonD3_pressed();
+	void on_buttonD4_pressed();
+	void on_buttonD6_pressed();
+	void on_buttonD8_pressed();
+	void on_buttonD10_pressed();
+	void on_buttonD12_pressed();
+	void on_buttonD20_pressed();
+	void on_buttonD100_pressed();
 };
 
 #endif //MAINWINDOW_H
